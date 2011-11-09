@@ -1,0 +1,8 @@
+<script>
+function searchgooglemaps(info)
+{
+  var searchstring = info.selectionText;
+  chrome.tabs.create({url: "http://eow.alc.co.jp/" + searchstring})
+}
+chrome.contextMenus.create({title: "Search English Word", contexts:["selection"], onclick: searchgooglemaps});
+</script>

@@ -1,0 +1,27 @@
+{
+  "name": "Enchant",
+  "version": "1.0",
+  "description": "The first extension that I made.",
+  "browser_action": {
+    "default_icon": "img/icon.png"
+  },
+  "icons": {
+    "16": "img/icon.png",
+    "48": "img/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "css": ["css/jquery-ui-1.8.16.css", "css/app.css"],
+      "js": ["js/jquery-1.7.min.js", "js/jquery-ui-1.8.16.min.js", "js/translation.js", "js/app.js"]
+    }
+  ],
+  "background_page": "html/background.html",
+  "minimum_chrome_version": "6",
+  "options_page": "html/options.html",
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "http://api.flickr.com/"
+  ]
+}

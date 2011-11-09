@@ -1,0 +1,31 @@
+span.enchant_translation {
+  display: inline-block;
+  color: #777;
+  font-size: 11px;
+  padding: 0 7px;
+  line-height: 13px;
+  cursor: pointer;
+  border-radius: 7px;
+  border: 1px solid transparent;
+}
+
+span.enchant_translation:hover {
+  color: #333;
+  border: 1px solid #aef;
+  background-color: #f1f9ff;
+  background: -webkit-gradient(linear, left top, left bottom,
+              from(#ffffff),
+              to(#f1f9ff));
+}
+
+span.enchant_translation span.enchant_close {
+  display: block;
+  float: right;
+  color: #000;
+  line-height: 13px;
+  display: none;
+}
+
+span.enchant_translation span.enchant_close:before {
+  content: ' ';
+}
