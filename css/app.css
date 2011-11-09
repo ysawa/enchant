@@ -22,6 +22,7 @@ div.enchant_insertion:hover {
 div.enchant_insertion span.enchant_text {
   line-height: 1.5;
   display: inline-block;
+  font-size: 11px;
   width: 98%;
   white-space: pre-wrap;
   font-weight: normal;
@@ -31,6 +32,7 @@ div.enchant_insertion textarea.enchant_textarea {
   font-weight: normal;
   line-height: 1.5;
   display: block;
+  font-size: 11px;
   width: 98%;
   background-color: #f1f1f1;
   background: -webkit-gradient(linear, left top, left bottom,
