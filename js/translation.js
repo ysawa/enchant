@@ -24,6 +24,7 @@
         $(marker).append('<span class="enchant_close">x</span>');
         $(marker).append('<span class="enchant_text">' + translated + '</span>');
         $(marker).append('<textarea class="enchant_textarea">' + translated + '</textarea>');
+        $(marker).children('textarea.enchant_textarea').hide();
 
         $(marker).hover(
           function () {
