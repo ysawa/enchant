@@ -1,31 +1,49 @@
-span.enchant_translation {
-  display: inline-block;
+div.enchant_insertion {
+  position: relative;
+  display: block;
   color: #777;
   font-size: 11px;
-  padding: 0 7px;
-  line-height: 13px;
-  cursor: pointer;
+  margin: 0;
+  padding: 7px;
   border-radius: 7px;
-  border: 1px solid transparent;
-}
-
-span.enchant_translation:hover {
-  color: #333;
+  width: auto;
   border: 1px solid #aef;
   background-color: #f1f9ff;
   background: -webkit-gradient(linear, left top, left bottom,
               from(#ffffff),
               to(#f1f9ff));
+  text-align: left;
 }
 
-span.enchant_translation span.enchant_close {
+div.enchant_insertion:hover {
+  color: #333;
+}
+
+div.enchant_insertion span.enchant_text {
+  line-height: 1.5;
+  display: inline-block;
+  width: 98%;
+  white-space: pre-wrap;
+  font-weight: normal;
+}
+
+div.enchant_insertion textarea.enchant_textarea {
+  font-weight: normal;
+  line-height: 1.5;
   display: block;
-  float: right;
+  width: 98%;
+  background-color: #f1f1f1;
+  background: -webkit-gradient(linear, left top, left bottom,
+              from(#ffffff),
+              to(#f1f1f1));
+}
+
+div.enchant_insertion span.enchant_close {
+  position: absolute;
+  top: 0px;
+  right: 3px;
   color: #000;
   line-height: 13px;
   display: none;
-}
-
-span.enchant_translation span.enchant_close:before {
-  content: ' ';
+  cursor: pointer;
 }
