@@ -22,7 +22,8 @@
         range.insertNode(marker);
         $(marker).addClass('enchant_insertion');
         $(marker).append('<span class="enchant_close">x</span>');
-        $(marker).append('<span class="enchant_text">' + translated + '</span>');
+        $(marker).append('<span class="enchant_text"></span>');
+        $(marker).children('textarea.enchant_text').text(translated);
         $(marker).append('<textarea class="enchant_textarea">' + translated + '</textarea>');
         $(marker).children('textarea.enchant_textarea').hide();
 
@@ -45,7 +46,7 @@
           function () {
             $(this).children('span.enchant_close').hide();
             $(this).children('span.enchant_text').show();
-            $(this).children('span.enchant_text').html($(this).children('textarea.enchant_textarea').val());
+            $(this).children('span.enchant_text').text($(this).children('textarea.enchant_textarea').val());
             $(this).children('textarea.enchant_textarea').hide();
           }
         );

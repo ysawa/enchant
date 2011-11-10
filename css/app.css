@@ -1,51 +1,64 @@
 div.enchant_insertion {
-  position: relative;
+  position: relative !important;
   display: block;
-  color: #777;
-  font-size: 11px;
-  margin: 0;
-  padding: 7px;
-  border-radius: 7px;
-  width: auto;
-  border: 1px solid #aef;
-  background-color: #f1f9ff;
+  color: #777 !important;
+  font-size: 11px !important;
+  margin: 0 !important;
+  padding: 7px !important;
+  border-radius: 7px !important;
+  width: auto !important;
+  border: 1px solid #aef !important;
+  background-color: #f1f9ff !important;
   background: -webkit-gradient(linear, left top, left bottom,
               from(#ffffff),
-              to(#f1f9ff));
-  text-align: left;
+              to(#f1f9ff)) !important;
+  text-align: left !important;
+}
+
+div.enchant_insertion * {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  vertical-align: baseline;
+  line-height: 1.5;
+  font-weight: normal;
+  text-decoration: none;
+}
+div.enchant_insertion span {
+  border: 0;
 }
 
 div.enchant_insertion:hover {
-  color: #333;
+  color: #333 !important;
 }
 
 div.enchant_insertion span.enchant_text {
-  line-height: 1.5;
+  line-height: 1.5 !important;
   display: inline-block;
-  font-size: 11px;
-  width: 98%;
-  white-space: pre-wrap;
-  font-weight: normal;
+  font-size: 11px !important;
+  width: 98% !important;
+  white-space: pre-wrap !important;
+  font-weight: normal !important;
 }
 
 div.enchant_insertion textarea.enchant_textarea {
-  font-weight: normal;
-  line-height: 1.5;
+  font-weight: normal !important;
+  line-height: 1.5 !important;
   display: block;
-  font-size: 11px;
-  width: 98%;
-  background-color: #f1f1f1;
+  font-size: 11px !important;
+  width: 98% !important;
+  background-color: #f1f1f1 !important;
   background: -webkit-gradient(linear, left top, left bottom,
               from(#ffffff),
-              to(#f1f1f1));
+              to(#f1f1f1)) !important;
 }
 
 div.enchant_insertion span.enchant_close {
-  position: absolute;
-  top: 0px;
-  right: 3px;
-  color: #000;
-  line-height: 13px;
+  position: absolute !important;
+  top: 0px !important;
+  right: 3px !important;
+  color: #000 !important;
+  line-height: 13px !important;
   display: none;
-  cursor: pointer;
+  cursor: pointer !important;
 }
